@@ -1,0 +1,34 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+catboost
+lightgbm
+torch
+torchvision
+torchaudio
+xgboost
+
+# Transformers
+accelerate
+ctransformers
+huggingface-hub
+einops
+optimum
+peft
+tokenizers
+transformers
+
+# Embeddings
+sentence-transformers
+
+# Ratings
+rouge
+sacrebleu
+sacremoses
+evaluate
+trl
+
+# Utils
+datasets
+orjson
+langchain
+evaluate
+trl
