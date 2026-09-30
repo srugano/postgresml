@@ -72,14 +72,14 @@ build_packages() {
       $(package_name ${pg} ${ubuntu_version} ${ARCH})
 
     # Upload to S3
-    deb-s3 upload \
-      --visibility=public \
-      --bucket apt.postgresml.org \
-      $(package_name ${pg} ${ubuntu_version} ${ARCH}) \
-      --codename ${codename}
+    #deb-s3 upload \
+    #  --visibility=public \
+    # --bucket apt.postgresml.org \
+    #  $(package_name ${pg} ${ubuntu_version} ${ARCH}) \
+    #  --codename ${codename}
 
     # Clean up the package file
-    rm $(package_name ${pg} ${ubuntu_version} ${ARCH})
+    #rm $(package_name ${pg} ${ubuntu_version} ${ARCH})
   done
 }
 

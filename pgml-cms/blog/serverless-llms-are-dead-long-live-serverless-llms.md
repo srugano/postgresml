@@ -64,9 +64,6 @@ Because we’ve curated the best in class models, they will always be instantly 
 
 Your application can instantly burst usage to massive scale without a second thought, other than the aforementioned cost of GPU usage. Financial costs are now the limiting factor, but we have an additional new lever to optimize costs even further.
 
-### Multi-tenant continuous batching
-It’s not just loading the model weights into GPU RAM the first time that’s expensive. Streaming those weights from GPU RAM to the CUDA cores for each request is actually the bottleneck for most LLM applications. Continuous batching allows us to reuse a single layer of weights for multiple different queries at the same time, further reducing costs, without significantly impacting overall latency. Thanks to vLLM team for [this impressive breakthrough](https://arxiv.org/abs/2309.06180) in performance.
-
 ### Simplified pricing
 Compared to using a host of services to provide comparable functionality, our pricing is significantly simpler. We charge for:
 
